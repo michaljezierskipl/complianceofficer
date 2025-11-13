@@ -1,14 +1,139 @@
 ---
-// import translations
-import translations from "@utils/t.ts";
 import Layout from "@layouts/Layout.astro";
 import Container from "@src/components/Container.astro";
-
-const t = translations(Astro.url);
 ---
 
 <Layout>
-	<Container class="pt-16">
-		<span set:html={t.home_description} />
-	</Container>
+  <Container class="pt-16">
+    <main>
+
+      <section>
+        <h1>Michał Jezierski</h1>
+        <h2>Director of Compliance & Risk Management</h2>
+
+        <p>
+          I help listed companies and capital groups translate regulatory expectations and stakeholder pressure into practical compliance, governance and risk frameworks that work in real business environments.
+        </p>
+
+        <p>
+          Currently Director of Compliance and Risk Management at <strong>Grupa Kęty S.A.</strong>, one of the largest industrial groups listed on the Warsaw Stock Exchange.
+        </p>
+
+        <p>
+          <a href="https://www.linkedin.com/in/jezierski-michal/" target="_blank" rel="noopener noreferrer">View my LinkedIn profile</a> ·
+          <a href="#" target="_blank" rel="noopener noreferrer">See my publications</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Profile at a glance</h2>
+        <ul>
+          <li><strong>Current role:</strong> Director of Compliance & Risk Management — Grupa Kęty S.A.</li>
+          <li><strong>Expertise:</strong> corporate compliance, enterprise risk management, governance in listed companies</li>
+          <li><strong>Experience:</strong> senior-level leadership in complex, regulated organisations</li>
+          <li><strong>Location:</strong> Poland — open to international opportunities (EU & GCC/UAE)</li>
+          <li><strong>Languages:</strong> Polish (native), English (professional proficiency)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Areas of expertise</h2>
+
+        <h3>Corporate & Regulatory Compliance</h3>
+        <p>
+          Designing, implementing and supervising compliance frameworks at group level: policies, procedures, training, investigations, monitoring and reporting. Ensuring that compliance supports the business instead of acting as a barrier.
+        </p>
+
+        <h3>Risk Management in Capital Groups</h3>
+        <p>
+          Building and maintaining enterprise risk management systems for diverse, multi-entity organisations. Integrating risk assessments with strategic planning and board-level decision making.
+        </p>
+
+        <h3>Governance in Listed Companies</h3>
+        <p>
+          Working within the framework of a publicly listed organisation: disclosure obligations, good practice codes, relations with supervisory boards and audit committees, and alignment with internal audit and finance functions.
+        </p>
+
+        <h3>New Technologies & Emerging Risks</h3>
+        <p>
+          Understanding how technologies — including data-driven tools and AI — reshape regulatory and operational risks. Focusing on practical governance, clear accountability and realistic controls.
+        </p>
+      </section>
+
+      <section>
+        <h2>Current role</h2>
+        <p>
+          I currently serve as Director of Compliance and Risk Management at <strong>Grupa Kęty S.A.</strong>, a major industrial group listed on the Warsaw Stock Exchange.
+        </p>
+        <p>
+          My responsibilities include:
+        </p>
+        <ul>
+          <li>designing and supervising compliance and risk processes across the capital group,</li>
+          <li>advising the management board on key compliance and risk matters,</li>
+          <li>preparing analyses and information for the supervisory board and its committees,</li>
+          <li>coordinating with internal audit and other control functions,</li>
+          <li>ensuring alignment between compliance, governance and strategic goals.</li>
+        </ul>
+        <p>
+          My role combines regulatory depth with pragmatic business understanding — helping the organisation operate confidently in a demanding market and regulatory environment.
+        </p>
+      </section>
+
+      <section>
+        <h2>International & GCC / UAE focus</h2>
+        <p>
+          While my base is in Poland, my professional interests and profile are international.
+        </p>
+        <p>
+          I am open to senior compliance and risk roles — as well as advisory engagements — in the EU and GCC region (including the UAE), particularly in organisations that need to:
+        </p>
+        <ul>
+          <li>build or strengthen compliance frameworks from the ground up,</li>
+          <li>establish enterprise risk management systems in growing groups,</li>
+          <li>align governance, compliance and risk functions to meet rising regulatory and stakeholder expectations.</li>
+        </ul>
+        <p>
+          I bring experience from a large, listed industrial group where compliance and risk have to support growth, not merely limit it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Selected publications</h2>
+        <p>I regularly share insights on compliance, risk and governance.</p>
+
+        <h3>Polish – LinkedIn</h3>
+        <p>
+          Practical commentary on compliance and risk in the Polish and EU regulatory environment.<br />
+          <em>Selected posts (coming soon).</em>
+        </p>
+
+        <h3>English – Medium</h3>
+        <p>
+          Long-form articles aimed at an international audience.<br />
+          <em>Selected articles (coming soon).</em>
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          The easiest way to reach me is via LinkedIn or email.
+        </p>
+        <ul>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">View my profile</a></li>
+          <li><strong>Email:</strong> [michal.jezierski@complianceofficer.org]</li>
+        </ul>
+        <p>
+          I am open to conversations regarding senior compliance & risk roles, advisory work and speaking engagements.
+        </p>
+        <p>
+          <small>
+            All views expressed on this website are my own and do not represent the official position of Grupa Kęty S.A. or any other organisation.
+          </small>
+        </p>
+      </section>
+
+    </main>
+  </Container>
 </Layout>
