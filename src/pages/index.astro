@@ -4,8 +4,36 @@ import Container from "@src/components/Container.astro";
 ---
 
 <style>
-  p {
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
     margin-bottom: 1.25rem;
+  }
+
+  .hero p {
+    margin-bottom: 0.9rem;
+  }
+
+  .hero-links a {
+    text-decoration: underline;
+  }
+
+  p {
+    margin-bottom: 1.1rem;
     line-height: 1.6;
     display: block;
   }
@@ -13,46 +41,73 @@ import Container from "@src/components/Container.astro";
   section {
     margin-bottom: 2.5rem;
   }
-</style>
 
+  ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-left: 0.8rem;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+</style>
 
 <Layout>
   <Container class="pt-16">
     <main>
 
-      <section>
-        <h1>Michał Jezierski</h1>
-        <h2>Director of Compliance & Risk Management</h2>
+      <!-- HERO / ABOVE THE FOLD -->
+      <section class="hero">
+        <h1>[Your Name]</h1>
+        <h2>Director of Compliance &amp; Risk Management</h2>
 
         <p>
-          I help listed companies and capital groups translate regulatory expectations and stakeholder pressure into practical compliance, governance and risk frameworks that work in real business environments.
+          Helping listed companies and capital groups build and supervise regulatory, compliance and risk frameworks that work in practice — not just on paper.
         </p>
 
         <p>
-          Currently Director of Compliance and Risk Management at <strong>Grupa Kęty S.A.</strong>, one of the largest industrial groups listed on the Warsaw Stock Exchange.
+          Currently Director of Compliance and Risk Management at
+          <strong>Grupa Kęty S.A.</strong>, one of the largest industrial groups listed on the Warsaw Stock Exchange.
         </p>
 
-        <p>
-          <a href="https://www.linkedin.com/in/jezierski-michal/" target="_blank" rel="noopener noreferrer">View my LinkedIn profile</a> ·
+        <p class="hero-links">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">View my LinkedIn profile</a>
+          ·
           <a href="#" target="_blank" rel="noopener noreferrer">See my publications</a>
         </p>
       </section>
 
+      <!-- PROFILE SNAPSHOT -->
       <section>
         <h2>Profile at a glance</h2>
         <ul>
-          <li><strong>Current role:</strong> Director of Compliance & Risk Management — Grupa Kęty S.A.</li>
+          <li><strong>Current role:</strong> Director of Compliance &amp; Risk Management — Grupa Kęty S.A.</li>
           <li><strong>Expertise:</strong> corporate compliance, enterprise risk management, governance in listed companies</li>
           <li><strong>Experience:</strong> senior-level leadership in complex, regulated organisations</li>
-          <li><strong>Location:</strong> Poland — open to international opportunities (EU & GCC/UAE)</li>
+          <li><strong>Location:</strong> Poland — open to international opportunities (EU &amp; GCC/UAE)</li>
           <li><strong>Languages:</strong> Polish (native), English (professional proficiency)</li>
         </ul>
       </section>
 
+      <!-- AREAS OF EXPERTISE -->
       <section>
         <h2>Areas of expertise</h2>
 
-        <h3>Corporate & Regulatory Compliance</h3>
+        <h3>Corporate &amp; Regulatory Compliance</h3>
         <p>
           Designing, implementing and supervising compliance frameworks at group level: policies, procedures, training, investigations, monitoring and reporting. Ensuring that compliance supports the business instead of acting as a barrier.
         </p>
@@ -67,16 +122,18 @@ import Container from "@src/components/Container.astro";
           Working within the framework of a publicly listed organisation: disclosure obligations, good practice codes, relations with supervisory boards and audit committees, and alignment with internal audit and finance functions.
         </p>
 
-        <h3>New Technologies & Emerging Risks</h3>
+        <h3>New Technologies &amp; Emerging Risks</h3>
         <p>
           Understanding how technologies — including data-driven tools and AI — reshape regulatory and operational risks. Focusing on practical governance, clear accountability and realistic controls.
         </p>
       </section>
 
+      <!-- CURRENT ROLE -->
       <section>
         <h2>Current role</h2>
         <p>
-          I currently serve as Director of Compliance and Risk Management at <strong>Grupa Kęty S.A.</strong>, a major industrial group listed on the Warsaw Stock Exchange.
+          I currently serve as Director of Compliance and Risk Management at
+          <strong>Grupa Kęty S.A.</strong>, a major industrial group listed on the Warsaw Stock Exchange.
         </p>
         <p>
           My responsibilities include:
@@ -93,8 +150,9 @@ import Container from "@src/components/Container.astro";
         </p>
       </section>
 
+      <!-- INTERNATIONAL / GCC / UAE FOCUS -->
       <section>
-        <h2>International & GCC / UAE focus</h2>
+        <h2>International &amp; GCC / UAE focus</h2>
         <p>
           While my base is in Poland, my professional interests and profile are international.
         </p>
@@ -111,6 +169,7 @@ import Container from "@src/components/Container.astro";
         </p>
       </section>
 
+      <!-- PUBLICATIONS -->
       <section>
         <h2>Selected publications</h2>
         <p>I regularly share insights on compliance, risk and governance.</p>
@@ -128,17 +187,21 @@ import Container from "@src/components/Container.astro";
         </p>
       </section>
 
+      <!-- CONTACT -->
       <section>
         <h2>Contact</h2>
         <p>
           The easiest way to reach me is via LinkedIn or email.
         </p>
         <ul>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">View my profile</a></li>
-          <li><strong>Email:</strong> [michal.jezierski@complianceofficer.org]</li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">View my profile</a>
+          </li>
+          <li><strong>Email:</strong> [your email address]</li>
         </ul>
         <p>
-          I am open to conversations regarding senior compliance & risk roles, advisory work and speaking engagements.
+          I am open to conversations regarding senior compliance &amp; risk roles, advisory work and speaking engagements.
         </p>
         <p>
           <small>
